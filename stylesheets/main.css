@@ -439,16 +439,6 @@ body {
 /* ============================================================================
    Header
     ============================================================================ */
-.home__portrait {
-  height: 100%;
-}
-
-.home__social-medias {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 /* ============================================================================
    Footer
     ============================================================================ */
@@ -465,13 +455,33 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1rem 2rem;
-  background-color: lavender;
+  padding: 1.5rem 2rem;
+  background-color: #FFB8B8;
   transition: top 500ms ease-in-out;
 }
 nav a {
   text-transform: uppercase;
-  color: #3e0457;
+  color: #b92c2c;
+  font-size: 1.7rem;
+}
+nav a:hover {
+  color: #8b1313;
+}
+
+.nav__logo {
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+.nav__logo:hover {
+  text-decoration: none;
+}
+
+.nav__links {
+  margin: 0 -1em;
+}
+.nav__links a {
+  display: inline-block;
+  margin: 0 0.5em;
 }
 
 /* ============================================================================
@@ -479,4 +489,21 @@ nav a {
     ============================================================================ */
 /* ============================================================================
    Carousel 
-    ============================================================================ *//*# sourceMappingURL=main.css.map */
+    ============================================================================ */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+.home__portrait {
+  height: 100%;
+}
+
+.home__social-medias {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=main.css.map */

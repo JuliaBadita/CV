@@ -1,3 +1,20 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+
+* {
+    box-sizing: border-box;
+}
+// Reset CSS
+html {
+    font-size: 10px;
+}
+
+.home__portrait {
+    height: 100%;
+ }
+ 
+ .home__social-medias {
+    height: 100%;
+    object-fit: cover;
+ }
