@@ -3,7 +3,8 @@
    ============================================================================ */
 
    nav {
-     position: sticky;
+     width: 100vw;
+     position: fixed;
      top: 0;
      display: flex;
      flex-wrap: wrap;
@@ -15,12 +16,13 @@
       text-transform: uppercase;
       color: $nav-links-color;
       font-size: 1.7rem;
+      display: inline-block;
+      margin: 0 0.5em;
       &:hover {
         color: $nav-links-hover;
       } 
     }
   }
-
 
   .nav__logo {
   font-weight: bold;
@@ -31,10 +33,10 @@
   }
 
   .nav__links {
-    margin: 0 -1em;
-    a {
-      display: inline-block;
-      margin: 0 0.5em;
-    }
+    margin: 0 1em;
   }
 
+
+
+
+  

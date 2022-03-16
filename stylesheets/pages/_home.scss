@@ -10,11 +10,24 @@ html {
     font-size: 10px;
 }
 
+body {
+    background-image: url(/img/Background.png);
+    width: 100vw;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+}
+
+.home__intro-container {
+    display: grid;
+}
+
 .home__portrait {
     height: 100%;
+    margin: 7em;
  }
  
  .home__social-medias {
     height: 100%;
     object-fit: cover;
  }
+

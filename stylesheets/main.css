@@ -449,8 +449,8 @@ body {
   Navbar
    ============================================================================ */
 nav {
-  position: -webkit-sticky;
-  position: sticky;
+  width: 100vw;
+  position: fixed;
   top: 0;
   display: flex;
   flex-wrap: wrap;
@@ -463,6 +463,8 @@ nav a {
   text-transform: uppercase;
   color: #b92c2c;
   font-size: 1.7rem;
+  display: inline-block;
+  margin: 0 0.5em;
 }
 nav a:hover {
   color: #8b1313;
@@ -477,11 +479,7 @@ nav a:hover {
 }
 
 .nav__links {
-  margin: 0 -1em;
-}
-.nav__links a {
-  display: inline-block;
-  margin: 0 0.5em;
+  margin: 0 1em;
 }
 
 /* ============================================================================
@@ -498,8 +496,20 @@ html {
   font-size: 10px;
 }
 
+body {
+  background-image: url(/img/Background.png);
+  width: 100vw;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
+.home__intro-container {
+  display: grid;
+}
+
 .home__portrait {
   height: 100%;
+  margin: 7em;
 }
 
 .home__social-medias {
