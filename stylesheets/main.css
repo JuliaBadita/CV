@@ -482,6 +482,32 @@ nav a:hover {
   margin: 0 1em;
 }
 
+/* Burger Menu */
+/* .burger__menu-Toggle {
+   display: block;
+   top: 0;
+   left: 5rem;
+   position: relative;
+   right: 3rem;
+   z-index: 1;
+   a {
+   text-decoration: none;
+   transition: color 0.3s ease;
+   }
+ }
+/*   -webkit-user-select: none;
+   user-select: none; (dans .burger__menu-Toggle)*/
+/* Responsive */
+@media (max-width: 800px) {
+  .nav__links {
+    display: none;
+  }
+}
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
 /* ============================================================================
    Buttons
     ============================================================================ */
@@ -524,4 +550,13 @@ body {
 }
 .home__social-medias img {
   width: 40px;
+}
+
+@media (max-width: 800px) {
+  .home__portrait img {
+    width: 65%;
+    height: 75%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }/*# sourceMappingURL=main.css.map */

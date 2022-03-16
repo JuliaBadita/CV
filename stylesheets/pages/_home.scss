@@ -39,5 +39,14 @@ body {
     }
  }
 
+ @media (max-width: 800px) {
+     .home__portrait {
+         img {
+         width: 65%;
+         height: 75%;
+         object-fit: cover;
+         }
+     }
+ }
 
 
