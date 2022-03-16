@@ -499,6 +499,7 @@ html {
 body {
   background-image: url(/img/Background.png);
   width: 100vw;
+  height: 100vh;
   background-repeat: repeat-y;
   background-attachment: fixed;
 }
@@ -509,11 +510,18 @@ body {
 
 .home__portrait {
   height: 100%;
-  margin: 7em;
+  margin: 8em;
+}
+.home__portrait img {
+  width: 30%;
+  height: 45%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home__social-medias {
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.home__social-medias img {
+  width: 40px;
 }/*# sourceMappingURL=main.css.map */
