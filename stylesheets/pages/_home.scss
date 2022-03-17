@@ -2,25 +2,6 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-* {
-    box-sizing: border-box;
-}
-// Reset CSS
-html {
-    font-size: 10px;
-}
-
-/* Background */
-
-body {
-    background-image: url(/img/Background.png);
-    width: 100vw;
-    height: 100vh;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    scroll-behavior: smooth;
-}
-
 /* Intro */
 
 .intro__section-container {
@@ -30,6 +11,9 @@ body {
 
 .home__intro-container {
     @include grid-column-repeat(2, 200px, 1fr, 10rem, 1rem);
+    @media screen and (max-width: 1100px) {
+        grid-template-columns: repeat(2, minmax(200px, 1fr));;   
+    }
     @media screen and (max-width: 900px) {
         grid-template-columns: repeat(1, minmax(400px, 1fr));
       }
@@ -54,26 +38,21 @@ body {
 
  
  .home__social-medias {
-
     display: flex;
     justify-content: space-evenly;
     img {
-        width: 40px;
+        width: 4rem;
+    }
+    svg {
+        width: 4rem;
+        color: $logo-intro;
     }
  }
 
- @media (max-width: 800px) {
-     .home__portrait {
-         img {
-         width: 65%;
-         height: 75%;
-         object-fit: cover;
-         }
-     }
- }
 
  .home__intro-text {
-     text-align: center;
+    display: flex;
+    align-items: center;
      font-size: x-large;
      @media (max-width: 1650px) {
          font-size: medium;

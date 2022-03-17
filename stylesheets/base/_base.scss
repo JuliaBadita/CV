@@ -34,6 +34,25 @@ a {
   }
 }
 
+// Reset CSS
+html {
+  font-size: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Background */
+
+body {
+  background-image: url(/img/Background.png);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
 /* Headings */
 
 h2 {

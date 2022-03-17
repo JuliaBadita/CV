@@ -5,6 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -369,6 +371,23 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
+html {
+  font-size: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+/* Background */
+body {
+  background-image: url(/img/Background.png);
+  width: 100vw;
+  height: 100vh;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+
 /* Headings */
 h2 {
   text-transform: uppercase;
@@ -485,6 +504,7 @@ nav a:hover {
 .nav__logo {
   font-weight: bold;
   letter-spacing: 0.2em;
+  font-family: "PT Sans", sans-serif;
 }
 .nav__logo:hover {
   text-decoration: none;
@@ -616,24 +636,6 @@ nav a:hover {
 /* ============================================================================
    Carousel 
     ============================================================================ */
-* {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 10px;
-}
-
-/* Background */
-body {
-  background-image: url(/img/Background.png);
-  width: 100vw;
-  height: 100vh;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
-  scroll-behavior: smooth;
-}
-
 /* Intro */
 .intro__section-container {
   margin-inline: auto;
@@ -646,6 +648,11 @@ body {
   -moz-column-gap: 10rem;
        column-gap: 10rem;
   row-gap: 1rem;
+}
+@media screen and (max-width: 1100px) {
+  .home__intro-container {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
 }
 @media screen and (max-width: 900px) {
   .home__intro-container {
@@ -678,19 +685,16 @@ body {
   justify-content: space-evenly;
 }
 .home__social-medias img {
-  width: 40px;
+  width: 4rem;
+}
+.home__social-medias svg {
+  width: 4rem;
+  color: #343434;
 }
 
-@media (max-width: 800px) {
-  .home__portrait img {
-    width: 65%;
-    height: 75%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-}
 .home__intro-text {
-  text-align: center;
+  display: flex;
+  align-items: center;
   font-size: x-large;
 }
 @media (max-width: 1650px) {
