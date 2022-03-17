@@ -1,6 +1,6 @@
-/* ============================================================================
-  Navbar
-   ============================================================================ */
+// /* ============================================================================
+//   Navbar
+//    ============================================================================ */
 
    nav {
      width: 100vw;
@@ -56,7 +56,7 @@
   
   /* Responsive Hamburger Menu */
 
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 900px) {
     .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
       display: none;
     }
@@ -148,7 +148,7 @@
   
   /* Responsive */
  
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .nav__links {
       display: none;
       }

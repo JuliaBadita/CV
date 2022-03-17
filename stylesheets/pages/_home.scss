@@ -24,18 +24,18 @@ body {
 /* Intro */
 
 .intro__section-container {
-    margin: 0 auto;
-    max-width: 70rem;
-    display:inline-block;
+    margin-inline: auto;
+    max-width: 100rem;
 }
 
 .home__intro-container {
-    @include grid-column-repeat(2, 800px, 2fr, 4rem, 1rem);
+    @include grid-column-repeat(2, 200px, 1fr, 10rem, 1rem);
     @media screen and (max-width: 900px) {
         grid-template-columns: repeat(1, minmax(400px, 1fr));
       }
     @media screen and (max-width: 550px) {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
+        justify-content: center;
       }
     }
 
@@ -44,16 +44,19 @@ body {
     }
 
 .home__portrait {
-    width: 70rem;
-    height: 70rem;
-    object-fit: cover;
+    max-width: 50rem;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
 }
 
  
  .home__social-medias {
-    height: 100%;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     img {
         width: 40px;
     }

@@ -460,9 +460,6 @@ body {
 /* ============================================================================
     Grid
     ============================================================================ */
-/* ============================================================================
-  Navbar
-   ============================================================================ */
 nav {
   width: 100vw;
   position: fixed;
@@ -513,7 +510,7 @@ nav a:hover {
 /*   -webkit-user-select: none;
    user-select: none; (dans .burger__menu-Toggle)*/
 /* Responsive Hamburger Menu */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
     display: none;
   }
@@ -608,7 +605,7 @@ nav a:hover {
 }
 
 /* Responsive */
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .nav__links {
     display: none;
   }
@@ -639,16 +636,15 @@ body {
 
 /* Intro */
 .intro__section-container {
-  margin: 0 auto;
-  max-width: 70rem;
-  display: inline-block;
+  margin-inline: auto;
+  max-width: 100rem;
 }
 
 .home__intro-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(800px, 2fr));
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  -moz-column-gap: 10rem;
+       column-gap: 10rem;
   row-gap: 1rem;
 }
 @media screen and (max-width: 900px) {
@@ -659,6 +655,7 @@ body {
 @media screen and (max-width: 550px) {
   .home__intro-container {
     grid-template-columns: repeat(1, minmax(200px, 1fr));
+    justify-content: center;
   }
 }
 
@@ -667,16 +664,18 @@ body {
 }
 
 .home__portrait {
-  width: 70rem;
-  height: 70rem;
+  max-width: 50rem;
+}
+.home__portrait img {
+  height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
 .home__social-medias {
-  height: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .home__social-medias img {
   width: 40px;
