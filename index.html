@@ -40,12 +40,37 @@
 
     <div class="nav__links">
     <a href="./index.html">Accueil</a>
-    <a href="">à propos</a>
-    <a href="">Cv</a>
-    <a href="">Portfolio</a>
-    <a href="" class="nav__contact">Contact</a>
+    <a href="#about">à propos</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact" class="nav__contact">Contact</a>
     </div>
-    </nav>
+  </nav>
+
+    <section class="hamburger-menu">
+      <input id="menu__toggle" type="checkbox" />
+      <label class="menu__btn" for="menu__toggle">
+        <span></span>
+      </label>
+
+      <ul class="menu__box">
+        <a href="./index.html" class="menu__item">
+          <li>Accueil</li>
+        </a>
+        <a href="#" class="menu__item">
+          <li>à propos</li>
+        </a>
+        <a href="#" class="menu__item">
+          <li>CV</li>
+        </a>
+        <a href="#" class="menu__item">
+          <li>Portfolio</li>
+        </a>
+        <a href="#" class="menu__item">
+          <li>Contact</li>
+        </a>
+      </ul>
+      </section>
 
     <!-- Mobile Menu -->
 <!--   <article class="burger__menu-Toggle">
@@ -107,17 +132,17 @@
 
   <!-- A propos de moi-->
 
-  <h2>à propos de moi</h2>
+  <h2 id="about">à propos de moi</h2>
 
 <p>Ceci est un exemple de texte pour la catégorie à propos de moi</p>
 
   <!-- Parcours -->
 
-  <h2>Parcours</h2>
+  <h2 id="parcours">Parcours</h2>
 
   <!-- Compétences -->
 
-  <h2>Compétences</h2>
+  <h3>Compétences</h3>
 
 <img src="img/9.png" alt="Photo du logo HTML5">
     <p>Maitrise des bases du langage HTML</p>
@@ -138,19 +163,19 @@
 
     <!-- Expériences -->
 
-    <h2>Expériences</h2>
+    <h3>Expériences</h3>
 
     <!-- Loisirs -->
 
-    <h2>Loisirs</h2>
+    <h3>Loisirs</h3>
 
     <!-- Portfolio -->
 
-    <h2>Portfolio</h2>
+    <h2 id="portfolio">Portfolio</h2>
 
     <!-- Contact -->
 
-    <h2>Contact</h2>
+    <h2 id="contact">Contact</h2>
 
 </main>
 
