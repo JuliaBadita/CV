@@ -369,6 +369,21 @@ a:hover, a:active, a:focus {
   text-decoration: underline;
 }
 
+/* Headings */
+h2 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: x-large;
+}
+
+h3 {
+  font-size: large;
+}
+
+p {
+  color: #0c0b0b;
+}
+
 /**
  * Basic typography style for copy text
  */
@@ -626,18 +641,19 @@ body {
 .intro__section-container {
   margin: 0 auto;
   max-width: 70rem;
+  display: inline-block;
 }
 
 .home__intro-container {
   display: grid;
-  grid-template-columns: repeat(2, minmax(220px, 2fr));
+  grid-template-columns: repeat(2, minmax(800px, 2fr));
   -moz-column-gap: 4rem;
        column-gap: 4rem;
   row-gap: 1rem;
 }
 @media screen and (max-width: 900px) {
   .home__intro-container {
-    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, minmax(400px, 1fr));
   }
 }
 @media screen and (max-width: 550px) {
@@ -651,8 +667,8 @@ body {
 }
 
 .home__portrait {
-  width: 100%;
-  height: 100%;
+  width: 70rem;
+  height: 70rem;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -678,6 +694,11 @@ body {
   text-align: center;
   font-size: x-large;
 }
+@media (max-width: 1650px) {
+  .home__intro-text {
+    font-size: medium;
+  }
+}
 
 /* Headings */
 h2 {
@@ -688,4 +709,9 @@ h2 {
 
 h3 {
   font-size: large;
+}
+
+.about {
+  text-align: center;
+  margin: 6em;
 }/*# sourceMappingURL=main.css.map */

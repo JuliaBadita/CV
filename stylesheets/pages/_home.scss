@@ -26,12 +26,13 @@ body {
 .intro__section-container {
     margin: 0 auto;
     max-width: 70rem;
+    display:inline-block;
 }
 
 .home__intro-container {
-    @include grid-column-repeat(2, 220px, 2fr, 4rem, 1rem);
+    @include grid-column-repeat(2, 800px, 2fr, 4rem, 1rem);
     @media screen and (max-width: 900px) {
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-template-columns: repeat(1, minmax(400px, 1fr));
       }
     @media screen and (max-width: 550px) {
         grid-template-columns: repeat(1, minmax(200px, 1fr));
@@ -43,8 +44,8 @@ body {
     }
 
 .home__portrait {
-    width: 100%;
-    height: 100%;
+    width: 70rem;
+    height: 70rem;
     object-fit: cover;
 }
 
@@ -71,6 +72,9 @@ body {
  .home__intro-text {
      text-align: center;
      font-size: x-large;
+     @media (max-width: 1650px) {
+         font-size: medium;
+     }
  }
 
  /* Headings */
@@ -86,3 +90,8 @@ body {
   }
 
 
+
+.about {
+    text-align: center;
+    margin: 6em;
+}
