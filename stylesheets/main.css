@@ -717,9 +717,11 @@ nav a:hover {
   flex-direction: column;
   margin: 0 auto;
   margin-top: 5rem;
+  border-radius: 1rem;
 }
 .intro__card-mobile .intro__profile-pic {
   width: 100%;
+  border-radius: 0.5rem;
 }
 
 .intro__card-mobile:hover {
