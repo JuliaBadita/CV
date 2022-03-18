@@ -651,7 +651,7 @@ nav a:hover {
   background-color: #ebd3cf;
   margin: 0 auto;
   max-width: 100rem;
-  padding: 8rem 0 6rem 0;
+  padding: 4rem 0 4rem 0;
   margin-top: 12rem;
 }
 @media screen and (max-width: 900px) {
@@ -749,6 +749,7 @@ nav a:hover {
   margin: 0 auto;
   width: 55%;
   margin-top: 10rem;
+  padding: 4rem 5rem 4rem 5rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -772,16 +773,19 @@ nav a:hover {
   row-gap: 1rem;
 }
 .section__skills img {
-  justify-content: center;
+  display: flex;
+  align-content: center;
+  margin-top: 8rem;
 }
 
-.article__skills p {
+.article__skills {
   box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
   border-radius: 1rem;
   background-color: #ebd3cf;
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  width: 55%;
-  margin-top: 5rem;
+  width: 65%;
+  margin-top: 8rem;
+  padding: 4rem 5rem 4rem 5rem;
 }/*# sourceMappingURL=main.css.map */

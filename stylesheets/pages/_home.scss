@@ -8,7 +8,7 @@
     @include cards;
     margin: 0 auto;
     max-width: 100rem;
-    padding: 8rem 0 6rem 0;
+    padding: 4rem 0 4rem 0;
     margin-top: 12rem;
     @media screen and (max-width: 900px) {
         display: none;
@@ -102,6 +102,7 @@
     margin: 0 auto;
     width: 55%;
     margin-top: 10rem;
+    padding: 4rem 5rem 4rem 5rem;
 }
 
 @media screen and (max-width: 900px) { 
@@ -117,6 +118,7 @@
 
 /// Resume Part
 
+
 .title__parcours {
     margin: 6rem;
 }
@@ -124,18 +126,18 @@
 .section__skills {
     @include grid-column-repeat(2, 150px, 2fr, 4rem, 1rem);
     img {
-        justify-content: center;
+        display: flex;
+        align-content: center;
+        margin-top: 8rem;
     }
 }
 
 .article__skills {
-   p {
     @include cards; 
     display: flex;
      justify-content: center;
      margin: 0 auto;
-     width: 55%;
-     margin-top: 5rem;
-   }    
+     width: 65%;
+     margin-top: 8rem;   
+     padding: 4rem 5rem 4rem 5rem;
 }
-
