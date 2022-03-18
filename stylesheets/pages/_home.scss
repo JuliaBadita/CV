@@ -72,13 +72,14 @@
   @media screen and (max-width: 900px) {
     .intro__card-mobile {
     @include cards; 
-    width: 45%;
+    width: 65%;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     margin-top: 5rem;
     .intro__profile-pic {
+        height: 63rem;
         object-fit: cover;
         border-radius: 0.5rem;
     }
@@ -88,7 +89,6 @@
   
   .intro__mobile-container {
     padding: 0.2rem 1.6rem;
-    // background-color: $navbar-color;
 }
 
 
@@ -100,8 +100,14 @@
     justify-content: center;
     flex-direction: column;
     margin: 0 auto;
-    width: 45%;
+    width: 55%;
     margin-top: 10rem;
+}
+
+@media screen and (max-width: 900px) { 
+    .section__about {
+        width: 75%;
+    }
 }
 
 .about {
@@ -113,5 +119,24 @@
 
 .title__parcours {
     margin: 6rem;
+}
+
+.section__skills {
+    @include grid-column-repeat(2, 150px, 2fr, 4rem, 1rem);
+    margin: 0 auto;
+    img {
+        justify-content: center;
+    }
+}
+
+.article__skills {
+   p {
+    @include cards; 
+    display: flex;
+     justify-content: center;
+     margin: 0 auto;
+     width: 55%;
+     margin-top: 5rem;
+   }    
 }
 

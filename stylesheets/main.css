@@ -721,7 +721,7 @@ nav a:hover {
     box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
     border-radius: 1rem;
     background-color: #ebd3cf;
-    width: 45%;
+    width: 65%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -729,6 +729,7 @@ nav a:hover {
     margin-top: 5rem;
   }
   .intro__card-mobile .intro__profile-pic {
+    height: 63rem;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 0.5rem;
@@ -746,14 +747,42 @@ nav a:hover {
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-  width: 45%;
+  width: 55%;
   margin-top: 10rem;
 }
 
+@media screen and (max-width: 900px) {
+  .section__about {
+    width: 75%;
+  }
+}
 .about {
   margin: 5em;
 }
 
 .title__parcours {
   margin: 6rem;
+}
+
+.section__skills {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 2fr));
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 1rem;
+  margin: 0 auto;
+}
+.section__skills img {
+  justify-content: center;
+}
+
+.article__skills p {
+  box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
+  border-radius: 1rem;
+  background-color: #ebd3cf;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 55%;
+  margin-top: 5rem;
 }/*# sourceMappingURL=main.css.map */
