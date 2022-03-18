@@ -770,7 +770,6 @@ nav a:hover {
   -moz-column-gap: 4rem;
        column-gap: 4rem;
   row-gap: 1rem;
-  margin: 0 auto;
 }
 .section__skills img {
   justify-content: center;
