@@ -10,17 +10,10 @@
 }
 
 .home__intro-container {
-    @include grid-column-repeat(2, 200px, 1fr, 10rem, 1rem);
+    @include grid-column-repeat(2, 200px, 1fr, 25rem, 1rem);
     @media screen and (max-width: 1100px) {
         grid-template-columns: repeat(2, minmax(200px, 1fr));;   
     }
-    @media screen and (max-width: 900px) {
-        grid-template-columns: repeat(1, minmax(400px, 1fr));
-      }
-    @media screen and (max-width: 550px) {
-        grid-template-columns: repeat(1, minmax(200px, 1fr));
-        justify-content: center;
-      }
     }
 
     .home__intro-container {
@@ -44,6 +37,7 @@
         width: 4rem;
     }
     svg {
+        height: 4.5rem;
         width: 4rem;
         color: $logo-intro;
     }
@@ -59,19 +53,13 @@
      }
  }
 
- /* Headings */
+ .intro__card-mobile {
+    @media screen and (min-width: 900px) {
+        display: none;
+    }
+ }
 
- h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: x-large;
-  }
-
-  h3 {
-    font-size: large;
-  }
-
-
+/// About part 
 
 .about {
     text-align: center;
