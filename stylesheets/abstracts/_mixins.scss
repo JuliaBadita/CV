@@ -51,3 +51,10 @@
   border-radius: 1rem;
   background-color: $card-color;
 }
+
+/// Title 
+
+@mixin titles {
+  text-align: center;
+  text-transform: uppercase;
+}

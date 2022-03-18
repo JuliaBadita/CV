@@ -381,29 +381,27 @@ html {
 /* Background */
 body {
   background-image: url(/img/pexels-paul-ijsendoorn-33041.jpg);
-  width: 100vw;
-  height: 100vh;
-  background-repeat: repeat-y;
   background-attachment: fixed;
   scroll-behavior: smooth;
 }
 
 /* Headings */
 h2 {
-  text-transform: uppercase;
   text-align: center;
+  text-transform: uppercase;
   font-size: x-large;
   color: white;
 }
 
 .home__h3 {
   text-align: center;
+  text-transform: uppercase;
   font-size: large;
   color: white;
 }
 
-p {
-  color: white;
+.home__paragraph {
+  font-size: larger;
 }
 
 /**
@@ -501,6 +499,7 @@ nav a {
   margin: 0 0.5em;
 }
 nav a:hover {
+  text-decoration: none;
   color: #b48383;
 }
 
@@ -752,5 +751,9 @@ nav a:hover {
 }
 
 .about {
-  margin: 6em;
+  margin: 5em;
+}
+
+.title__parcours {
+  margin: 6rem;
 }/*# sourceMappingURL=main.css.map */

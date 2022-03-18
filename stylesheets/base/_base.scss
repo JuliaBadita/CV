@@ -46,9 +46,6 @@ html {
 
 body {
   background-image: url(/img/pexels-paul-ijsendoorn-33041.jpg);
-  width: 100vw;
-  height: 100vh;
-  background-repeat: repeat-y;
   background-attachment: fixed;
   scroll-behavior: smooth;
 }
@@ -56,18 +53,17 @@ body {
 /* Headings */
 
 h2 {
-  text-transform: uppercase;
-  text-align: center;
+  @include titles;
   font-size: x-large;
   color: white;
 }
 
 .home__h3 {
-  text-align: center;
+  @include titles;
   font-size: large;
   color: white;
 }
 
-p {
-  color: white;
+.home__paragraph {
+  font-size: larger;
 }
