@@ -510,6 +510,11 @@ nav a:hover {
   text-decoration: none;
 }
 
+@media screen and (max-width: 901px) {
+  .nav__logo {
+    margin: 0 auto;
+  }
+}
 .nav__links {
   margin: 0 1em;
 }
@@ -530,7 +535,7 @@ nav a:hover {
 /*   -webkit-user-select: none;
    user-select: none; (dans .burger__menu-Toggle)*/
 /* Responsive Hamburger Menu */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 901px) {
   .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
     display: none;
   }
@@ -563,10 +568,10 @@ nav a:hover {
 
 .menu__btn {
   position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 26px;
-  height: 26px;
+  top: 2rem;
+  left: 2rem;
+  width: 2.6rem;
+  height: 2.6rem;
   cursor: pointer;
   z-index: 7;
 }
@@ -577,19 +582,19 @@ nav a:hover {
   display: block;
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 0.2rem;
   background-color: #616161;
   transition-duration: 0.25s;
 }
 
 .menu__btn > span::before {
   content: "";
-  top: -8px;
+  top: -0.8rem;
 }
 
 .menu__btn > span::after {
   content: "";
-  top: 8px;
+  top: 0.8rem;
 }
 
 .menu__box {
@@ -597,23 +602,23 @@ nav a:hover {
   position: fixed;
   top: 0;
   left: -100%;
-  width: 300px;
+  width: 30rem;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 8rem 0;
   list-style: none;
   background-color: #ECEFF1;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  box-shadow: 0.2rem 0.2rem 0.6rem rgba(0, 0, 0, 0.4);
   transition-duration: 0.25s;
   z-index: 6;
 }
 
 .menu__item {
   display: block;
-  padding: 12px 24px;
+  padding: 1.2rem 2.4rem;
   color: #333;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: 600;
   text-decoration: none;
   transition-duration: 0.25s;
@@ -654,6 +659,11 @@ nav a:hover {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 }
+@media screen and (max-width: 900px) {
+  .home__intro-container {
+    display: none;
+  }
+}
 
 .home__intro-container {
   padding: 8rem 0 6rem 0;
@@ -689,7 +699,7 @@ nav a:hover {
 }
 @media (max-width: 1650px) {
   .home__intro-text {
-    font-size: medium;
+    font-size: large;
   }
 }
 
@@ -697,6 +707,27 @@ nav a:hover {
   .intro__card-mobile {
     display: none;
   }
+}
+.intro__card-mobile {
+  box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
+  transition: 0.3s;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.intro__card-mobile .intro__profile-pic {
+  width: 100%;
+}
+
+.intro__card-mobile:hover {
+  box-shadow: 0 0.8rem 1.6rem 0 #0f0f0f;
+}
+
+.intro__mobile-container {
+  padding: 0.2rem 1.6rem;
 }
 
 .about {
