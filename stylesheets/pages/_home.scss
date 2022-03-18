@@ -9,7 +9,7 @@
     margin: 0 auto;
     max-width: 100rem;
     padding: 8rem 0 6rem 0;
-    margin-top: 10rem;
+    margin-top: 12rem;
     @media screen and (max-width: 900px) {
         display: none;
     }
@@ -69,8 +69,8 @@
     }
   }
 
-
- .intro__card-mobile {
+  @media screen and (max-width: 900px) {
+    .intro__card-mobile {
     @include cards; 
     width: 45%;
     text-align: center;
@@ -82,7 +82,8 @@
         object-fit: cover;
         border-radius: 0.5rem;
     }
-  }
+ }
+}
   
   
   .intro__mobile-container {
@@ -93,7 +94,16 @@
 
 /// About part 
 
+.section__about {
+    @include cards;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 45%;
+    margin-top: 10rem;
+}
+
 .about {
-    text-align: center;
     margin: 6em;
 }
