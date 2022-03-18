@@ -42,3 +42,12 @@
   row-gap: $row-gap;
   @content;
 }
+
+
+/// Cards 
+
+@mixin cards {
+  box-shadow: 0 0.4rem 0.8rem 0 $shadow;
+  border-radius: 1rem;
+  background-color: $card-color;
+}
