@@ -380,7 +380,7 @@ html {
 
 /* Background */
 body {
-  background-image: url(/img/pexels-paul-ijsendoorn-33041.jpg);
+  background-image: url(/img/background.jpg);
   background-attachment: fixed;
   scroll-behavior: smooth;
 }
