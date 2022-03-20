@@ -12,6 +12,7 @@
      padding: 1.5rem 2rem ;
      background-color: $navbar-color;
      transition: top 500ms ease-in-out;
+     z-index: 5;
     a {
       text-transform: uppercase;
       color: $nav-links-color;
@@ -44,23 +45,6 @@
     margin: 0 1em;
   }
 
-
-  /* Burger Menu */
-
-  /* .burger__menu-Toggle {
-    display: block;
-    top: 0;
-    left: 5rem;
-    position: relative;
-    right: 3rem;
-    z-index: 1;
-    a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-    }
-  }
- /*   -webkit-user-select: none;
-    user-select: none; (dans .burger__menu-Toggle)*/
   
   /* Responsive Hamburger Menu */
 

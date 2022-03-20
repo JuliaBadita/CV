@@ -383,6 +383,7 @@ body {
   background-image: url(/img/background.jpg);
   background-attachment: fixed;
   scroll-behavior: smooth;
+  background-color: #ebe6dd;
 }
 
 /* Headings */
@@ -490,6 +491,7 @@ nav {
   padding: 1.5rem 2rem;
   background-color: #583d4c;
   transition: top 500ms ease-in-out;
+  z-index: 5;
 }
 nav a {
   text-transform: uppercase;
@@ -521,21 +523,6 @@ nav a:hover {
   margin: 0 1em;
 }
 
-/* Burger Menu */
-/* .burger__menu-Toggle {
-   display: block;
-   top: 0;
-   left: 5rem;
-   position: relative;
-   right: 3rem;
-   z-index: 1;
-   a {
-   text-decoration: none;
-   transition: color 0.3s ease;
-   }
- }
-/*   -webkit-user-select: none;
-   user-select: none; (dans .burger__menu-Toggle)*/
 /* Responsive Hamburger Menu */
 @media screen and (min-width: 901px) {
   .hamburger-menu, #menu__toggle, .menu__btn, .menu__box, .menu__item {
@@ -768,14 +755,14 @@ nav a:hover {
 .section__skills {
   display: grid;
   grid-template-columns: repeat(2, minmax(150px, 2fr));
-  -moz-column-gap: 4rem;
-       column-gap: 4rem;
+  -moz-column-gap: 1rem;
+       column-gap: 1rem;
   row-gap: 1rem;
+  justify-items: center;
 }
 .section__skills img {
-  display: flex;
-  align-content: center;
-  margin-top: 8rem;
+  width: 70%;
+  margin-top: 4rem;
 }
 
 .article__skills {
@@ -784,8 +771,84 @@ nav a:hover {
   background-color: #ebd3cf;
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  align-content: center;
+  height: 40%;
   width: 65%;
-  margin-top: 8rem;
-  padding: 4rem 5rem 4rem 5rem;
+  margin-top: 10rem;
+  padding: 2rem 3rem 2rem 3rem;
+}
+
+.home__timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+.home__timeline:after {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  background-color: #583d4c;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.3rem;
+}
+
+.timeline__container {
+  padding: 1rem 4rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+.timeline__container:after {
+  content: "";
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: -1.7rem;
+  background-color: #ebd3cf;
+  border: 0.4rem solid #b48383;
+  top: 1.5rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.timeline__item-left {
+  left: 0;
+}
+
+.timeline__item-right {
+  left: 50%;
+}
+.timeline__item-right:after {
+  left: -1.4rem;
+}
+
+.timeline__content {
+  padding: 2rem 3rem;
+  background-color: #ebd3cf;
+  position: relative;
+  border-radius: 0.6rem;
+}
+
+@media screen and (max-width: 600px) {
+  .home__timeline:after {
+    left: 3.1rem;
+  }
+
+  .timeline__container {
+    width: 100%;
+    padding-left: 7rem;
+    padding-right: 2.5rem;
+  }
+
+  .timeline__item-left::after, .timeline__item-right::after {
+    left: 1.5rem;
+  }
+
+  .timeline__item-right {
+    left: 0%;
+  }
 }/*# sourceMappingURL=main.css.map */
