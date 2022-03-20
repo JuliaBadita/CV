@@ -131,6 +131,9 @@
     img {
         width: 70%;
         margin-top: 4rem;
+        @media screen and (max-width: 800px) {
+            margin-top: 1rem;
+        }
     }
 }
 
@@ -143,6 +146,10 @@
     width: 65%;
     margin-top: 10rem;   
     padding: 2rem 3rem 2rem 3rem;
+    @media screen and (max-width: 800px) {
+        margin-top: 3rem;
+        height: 80%;
+    }
 }
 
 
@@ -182,6 +189,9 @@
       top: 1.5rem;
       border-radius: 50%;
       z-index: 1;
+    }
+    span {
+        font-size: medium;
     }
 }
     
@@ -226,3 +236,57 @@
       left: 0%;
       }
     }
+
+
+    /// Portfolio
+
+    .portfolio__container {
+        @include grid-column-repeat(3, 150px, 2fr, 2rem, 1rem);
+        text-align: center;
+        @media screen and (max-width: 800px) {
+            grid-template-columns: repeat(1, minmax(200px, 1fr));
+            justify-content: center;
+          }
+        img {
+            width: 70%;
+            @media screen and (max-width: 800px) {
+                width: 55%;
+            }
+        }
+    }
+
+
+    ///Contact 
+
+    input[type=text],  input[type=email], textarea {
+        width: 100%;
+        padding: 1.2rem;
+        border: 0.1rem solid $nav-links-hover;
+        border-radius: 0.4rem;
+        box-sizing: border-box;
+        margin-top: 0.6rem;
+        margin-bottom: 1.6rem;
+        resize: vertical;
+      }
+      
+      /// Form button
+
+      input[type=submit] {
+        background-color: $navbar-color;
+        color: $white;
+        padding: 1.2rem 2rem;
+        border: none;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        &:hover {
+          background-color: $nav-links-hover;
+        }
+      }
+      
+      
+      .contact__form {
+        border-radius: 0.5rem;
+        background-color: $card-color;
+        padding: 2rem;
+        margin: 8rem;
+      }
