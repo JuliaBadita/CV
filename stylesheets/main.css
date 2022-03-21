@@ -961,14 +961,21 @@ input[type=submit] a {
   margin-top: 10rem;
   padding: 2rem 3rem 2rem 3rem;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+  .article__skills {
+    margin-top: 3rem;
+    height: 65%;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 810px) {
   .article__skills {
     margin-top: 3rem;
     height: 80%;
     width: 90%;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .article__skills {
     margin-top: 3rem;
     height: 90%;
@@ -1151,6 +1158,12 @@ input[type=text], input[type=email], textarea {
     margin-right: 10rem;
   }
 }
+@media screen and (max-width: 700px) {
+  .contact__form {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 
 .lottie__files {
   display: grid;
@@ -1166,13 +1179,11 @@ lottie-player {
   height: 30rem;
   margin: 0.3rem;
 }
-
-.lottie1 {
-  margin-right: 1rem;
-}
-
-.lottie2 {
-  margin-left: 1rem;
+@media screen and (max-width: 600px) {
+  lottie-player {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 footer {
