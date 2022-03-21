@@ -387,14 +387,14 @@ body {
 }
 
 /* Headings */
-h2 {
+h1, h2, h3, h4 {
   text-align: center;
   text-transform: uppercase;
   font-size: x-large;
   color: white;
 }
 
-.home__h3 {
+.home__title-span {
   text-align: center;
   text-transform: uppercase;
   font-size: large;
@@ -632,6 +632,19 @@ nav a:hover {
    Carousel 
     ============================================================================ */
 /* Intro */
+.intro__name {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: x-large;
+  color: black;
+}
+
+.intro__name-mobile {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: x-large;
+}
+
 .intro__section-container {
   box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
   border-radius: 1rem;
@@ -726,6 +739,10 @@ nav a:hover {
   padding: 0.2rem 1.6rem;
 }
 
+#about {
+  margin-top: 7rem;
+}
+
 .section__about {
   box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
   border-radius: 1rem;
@@ -737,6 +754,12 @@ nav a:hover {
   width: 55%;
   margin-top: 10rem;
   padding: 4rem 5rem 4rem 5rem;
+}
+@media screen and (max-width: 800px) {
+  .section__about {
+    padding: 0.4rem 3rem 3rem 0.4rem;
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -888,6 +911,10 @@ nav a:hover {
     width: 55%;
   }
 }
+.portfolio__container img:hover {
+  border: 0.3rem solid #b48383;
+  border-radius: 1rem;
+}
 
 input[type=text], input[type=email], textarea {
   width: 100%;
@@ -917,4 +944,26 @@ input[type=submit]:hover {
   background-color: #ebd3cf;
   padding: 2rem;
   margin: 8rem;
+}
+
+footer {
+  margin-top: 2em;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: black;
+}
+.footer a {
+  color: black;
+  text-decoration: underline;
+}
+.footer a:hover {
+  color: white;
 }/*# sourceMappingURL=main.css.map */

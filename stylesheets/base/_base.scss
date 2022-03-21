@@ -53,13 +53,13 @@ body {
 
 /* Headings */
 
-h2 {
+h1, h2, h3, h4 {
   @include titles;
   font-size: x-large;
   color: white;
 }
 
-.home__h3 {
+.home__title-span {
   @include titles;
   font-size: large;
   color: white;
