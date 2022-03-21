@@ -971,13 +971,15 @@ input[type=submit] a {
 }
 @media screen and (max-width: 810px) {
   .article__skills {
-    margin-top: 3rem;
+    margin-top: 1rem;
+    margin-left: 10rem;
     height: 80%;
     width: 90%;
   }
 }
 @media screen and (max-width: 450px) {
   .article__skills {
+    margin-left: 3rem;
     margin-top: 3rem;
     height: 90%;
     width: 90%;
