@@ -360,7 +360,17 @@
 .portfolio__title {
     padding: 1rem;
     background-color: $navbar-color;
-    color: $white
+    color: $white;
+    margin-left: 2.8rem;
+    margin-right: 2.8rem;
+    @media screen and (max-width: 1500px) {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    }
+    @media screen and (max-width: 1000px) {
+    margin-left: 4.9rem;
+    margin-right: 4.9rem;
+    }
 }
 
 

@@ -1100,6 +1100,20 @@ input[type=submit] a {
   padding: 1rem;
   background-color: #583d4c;
   color: white;
+  margin-left: 2.8rem;
+  margin-right: 2.8rem;
+}
+@media screen and (max-width: 1500px) {
+  .portfolio__title {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .portfolio__title {
+    margin-left: 4.9rem;
+    margin-right: 4.9rem;
+  }
 }
 
 #contact {
