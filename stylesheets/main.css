@@ -654,6 +654,11 @@ nav a:hover {
   padding: 4rem 0 4rem 0;
   margin-top: 12rem;
 }
+@media screen and (max-width: 1125px) {
+  .intro__section-container {
+    margin: 10rem;
+  }
+}
 @media screen and (max-width: 900px) {
   .intro__section-container {
     display: none;
@@ -740,7 +745,7 @@ nav a:hover {
 }
 
 #about {
-  margin-top: 7rem;
+  margin: 10rem;
 }
 
 .section__about {
@@ -772,7 +777,7 @@ nav a:hover {
 }
 
 .title__parcours {
-  margin: 6rem;
+  margin-top: 10rem;
 }
 
 .section__skills {
@@ -810,6 +815,10 @@ nav a:hover {
     margin-top: 3rem;
     height: 80%;
   }
+}
+
+.home__title-span {
+  margin: 6rem;
 }
 
 .home__timeline {
@@ -889,6 +898,10 @@ nav a:hover {
     left: 0%;
   }
 }
+#portfolio {
+  margin: 10rem;
+}
+
 .portfolio__container {
   display: grid;
   grid-template-columns: repeat(3, minmax(150px, 2fr));
@@ -914,6 +927,10 @@ nav a:hover {
 .portfolio__container img:hover {
   border: 0.3rem solid #b48383;
   border-radius: 1rem;
+}
+
+#contact {
+  margin: 10rem;
 }
 
 input[type=text], input[type=email], textarea {
@@ -958,12 +975,12 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  color: black;
+  color: white;
 }
 .footer a {
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 .footer a:hover {
-  color: white;
+  color: black;
 }/*# sourceMappingURL=main.css.map */
