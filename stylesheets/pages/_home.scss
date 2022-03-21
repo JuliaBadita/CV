@@ -2,7 +2,50 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+
+/// Dark mode 
+
+.dark {
+   .timeline__content, .intro__section-container, .intro__card-mobile, .article__skills, .contact__form {
+    background: $navbar-color;
+    color: $white;
+  }
+  .intro__button, .intro__button-mobile, input[type=submit] {
+      background-color: $card-color;
+      color: black;
+      font-weight: 600;
+      &:hover {
+          background-color: $nav-links-hover;
+      }
+  }
+  .home__intro-text {
+      color: $white;
+      h1 {
+          color: $white;
+      }
+  }
+  .section__about {
+      background-color: $navbar-color;
+      color: $white;
+  }
+  .timeline__title {
+      span {
+          color: $card-color;
+      }
+  }
+}
+
+  .dark .dark-mode-label {
+    box-shadow: 2px 1px 1px $shadow;
+    background: $card-color;
+  }
+
+
+
+
+
 /* Intro */
+
 
 .intro__name {
 @include titles;
@@ -149,86 +192,7 @@
     margin-top: 10rem;
 }
 
-// /// Skills
-
-// .skills__li {
-//     background-position: 100%;
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     padding-bottom: 10em;
-//     overflow-x: hidden;
-//     overflow-y: auto;
-  
-//     &__title {
-//       font-size: 3em;
-//     }
-//   }
-  
-//   // article styles 
-//   .skills__ul {
-//     margin: 10rem; 
-//     li {
-//       margin-bottom: 5rem;
-//     }
-//   }
-  
-//   .skills__article {
-//     background-color: $card-color;
-//     box-shadow: 0 0.1rem 2rem black(.24);
-//     display: flex;
-//     flex-flow: column wrap;
-    
-//     > div {
-//       flex: 1;
-//     }
-    
-//     > .skills__article-media {
-//       background-color: transparent;
-//       background-position: 100%;
-//       background-repeat: no-repeat;
-//       background-size: cover;
-//       height: 100%;
-//       min-width: 8em;
-//       position: relative;
-      
-//       &:after {
-//         display: block;
-//         content: "";
-//         position: absolute;
-//         top: 0;
-//         left: 0;
-//         height: 100%;
-//         width: 100%;
-//       }
-      
-//       .skills__ul > :nth-child(1) & {
-//         background-image: url(/img/html-5.png);
-//       }
-      
-//       .skills__ul > :nth-child(2) & {
-//         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/190822/tiger-bw-640x480.jpg');
-//       }
-      
-//       .skills__ul > :nth-child(3) & {
-//         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/190822/rhino-bw-640x480.jpg');
-//       }
-//     }
-    
-  
-//   } 
-  
-//   /// Responsive
-  
-//   @media (min-width: 40em) {
-//     .skills__article {
-//       flex-direction: row;
-      
-//       .skills__article-media {
-//         height: auto;
-//       }
-//     }
-//   }
-
+/// Skills
 
 .section__skills {
     @include grid-column-repeat(2, 150px, 2fr, 1rem, 1rem);
@@ -239,6 +203,9 @@
         @media screen and (max-width: 800px) {
             margin-top: 1rem;
         }
+        @media screen and (max-width: 600px) {
+            width: 15rem;
+        }
     }
 }
 
@@ -247,13 +214,20 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    font-size: medium;
     height: 40%;
     width: 65%;
     margin-top: 10rem;   
     padding: 2rem 3rem 2rem 3rem;
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 600px) {
         margin-top: 3rem;
         height: 80%;
+        width: 90%;
+    }
+    @media screen and (max-width: 400px) {
+        margin-top: 3rem;
+        height: 90%;
+        width: 90%;
     }
 }
 
@@ -299,11 +273,23 @@
       border-radius: 50%;
       z-index: 1;
     }
+}
+
+.timeline__year {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.timeline__title {
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 500;
     span {
-        font-size: medium;
+        color: $navbar-color;
+        font-weight: 600;
     }
 }
-    
+
     .timeline__item-left {
       left: 0;
     }
@@ -364,19 +350,21 @@
             justify-content: center;
           }
         img {
-            width: 80%;
-            &:hover {
-                border: 0.3rem solid $nav-links-hover;
-                border-radius: 1rem;
-            }
-        }
+            width: 87%;
     }
+}
+
+.portfolio__title {
+    padding: 1rem;
+    background-color: $navbar-color;
+    color: $white
+}
 
 
     /// Contact form
 
     #contact {
-        margin: 10rem;
+        margin: 5rem;
     }
     input[type=text],  input[type=email], textarea {
         width: 100%;
@@ -394,7 +382,10 @@
         border-radius: 0.5rem;
         background-color: $card-color;
         padding: 2rem;
-        margin: 8rem;
+        margin: 25rem;
+        @media screen and (max-width: 1500px) {
+            margin: 10rem;
+        }
       }
 
 

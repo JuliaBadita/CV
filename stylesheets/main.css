@@ -379,6 +379,10 @@ body {
   background-attachment: fixed;
   scroll-behavior: smooth;
   background-color: #ebe6dd;
+  margin: 0;
+  transition: 0.2s linear;
+  font-family: "Dosis", sasn-serif;
+  color: #333;
 }
 
 /* Headings */
@@ -623,6 +627,51 @@ nav a:hover {
 /* ============================================================================
    Buttons
     ============================================================================ */
+.dark-mode-toggle {
+  position: absolute;
+  right: 4rem;
+  top: 10rem;
+}
+
+.dark-mode-checkbox {
+  display: none;
+}
+
+.dark-mode-label {
+  height: 2.6rem;
+  width: 5rem;
+  background: #583d4c;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  transform: scale(1.2);
+  box-shadow: 0.2rem 0.1rem 0.1rem #0f0f0f;
+}
+
+.dark-mode-label .dark-mode-ball {
+  background: #a7a09f;
+  border-radius: 50%;
+  height: 2.2rem;
+  width: 2.2rem;
+  position: absolute;
+  top: 0.2rem;
+  left: 0.2rem;
+  transform: translateX(0px);
+  transition: transform 0.4s cubic-bezier(0.45, -1.12, 0.35, 1.78);
+}
+
+.dark-mode-checkbox:checked + .dark-mode-label .dark-mode-ball {
+  transform: translateX(2.5rem);
+}
+
+.fa-moon, .fa-sun {
+  color: white;
+}
+
 .intro__button {
   background-color: #583d4c;
   color: white;
@@ -663,6 +712,12 @@ nav a:hover {
   color: white;
   font-weight: 600;
 }
+@media screen and (max-width: 500px) {
+  .intro__button-mobile {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+}
 
 input[type=submit] {
   background-color: #583d4c;
@@ -685,6 +740,37 @@ input[type=submit] a {
 /* ============================================================================
    Carousel 
     ============================================================================ */
+.dark .timeline__content, .dark .intro__section-container, .dark .intro__card-mobile, .dark .article__skills, .dark .contact__form {
+  background: #583d4c;
+  color: white;
+}
+.dark .intro__button, .dark .intro__button-mobile, .dark input[type=submit] {
+  background-color: #ebd3cf;
+  color: black;
+  font-weight: 600;
+}
+.dark .intro__button:hover, .dark .intro__button-mobile:hover, .dark input[type=submit]:hover {
+  background-color: #b48383;
+}
+.dark .home__intro-text {
+  color: white;
+}
+.dark .home__intro-text h1 {
+  color: white;
+}
+.dark .section__about {
+  background-color: #583d4c;
+  color: white;
+}
+.dark .timeline__title span {
+  color: #ebd3cf;
+}
+
+.dark .dark-mode-label {
+  box-shadow: 2px 1px 1px #0f0f0f;
+  background: #ebd3cf;
+}
+
 /* Intro */
 .intro__name {
   text-align: center;
@@ -851,6 +937,11 @@ input[type=submit] a {
     margin-top: 1rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .section__skills img {
+    width: 15rem;
+  }
+}
 
 .article__skills {
   box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
@@ -859,15 +950,24 @@ input[type=submit] a {
   display: flex;
   justify-content: center;
   align-content: center;
+  font-size: medium;
   height: 40%;
   width: 65%;
   margin-top: 10rem;
   padding: 2rem 3rem 2rem 3rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .article__skills {
     margin-top: 3rem;
     height: 80%;
+    width: 90%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .article__skills {
+    margin-top: 3rem;
+    height: 90%;
+    width: 90%;
   }
 }
 
@@ -911,8 +1011,20 @@ input[type=submit] a {
   border-radius: 50%;
   z-index: 1;
 }
-.timeline__container span {
+
+.timeline__year {
   font-size: medium;
+  font-weight: 700;
+}
+
+.timeline__title {
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+.timeline__title span {
+  color: #583d4c;
+  font-weight: 600;
 }
 
 .timeline__item-left {
@@ -976,15 +1088,17 @@ input[type=submit] a {
   }
 }
 .portfolio__container img {
-  width: 80%;
+  width: 87%;
 }
-.portfolio__container img:hover {
-  border: 0.3rem solid #b48383;
-  border-radius: 1rem;
+
+.portfolio__title {
+  padding: 1rem;
+  background-color: #583d4c;
+  color: white;
 }
 
 #contact {
-  margin: 10rem;
+  margin: 5rem;
 }
 
 input[type=text], input[type=email], textarea {
@@ -1002,7 +1116,12 @@ input[type=text], input[type=email], textarea {
   border-radius: 0.5rem;
   background-color: #ebd3cf;
   padding: 2rem;
-  margin: 8rem;
+  margin: 25rem;
+}
+@media screen and (max-width: 1500px) {
+  .contact__form {
+    margin: 10rem;
+  }
 }
 
 footer {

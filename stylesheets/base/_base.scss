@@ -43,7 +43,12 @@ body {
   background-attachment: fixed;
   scroll-behavior: smooth;
   background-color: $bg-color;
+  margin: 0;
+  transition: 0.2s linear;
+  font-family: 'Dosis', sasn-serif;
+  color: #333;
 }
+
 
 /* Headings */
 

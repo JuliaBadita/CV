@@ -24,6 +24,8 @@
   <!-- Stylesheets -->
   <link rel="stylesheet" href="stylesheets/main.css">
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -70,9 +72,24 @@
           Contact
         </a>
       </article>
-      </section>
+    </section>
+    
+  </header>
+  
 
-   </header>
+  <!-- Dark Mode -->
+
+  <article class="dark-mode-toggle">
+    <input type="checkbox" class="dark-mode-checkbox" id="dark-mode" />
+    <label for="dark-mode" class="dark-mode-label">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="dark-mode-ball"></div>
+    </label>
+   </article>
+
+
+   <span class="darkened-background"></span>
 
 <main>
 
@@ -105,6 +122,7 @@
 <a href="/img/pdf-cv/CV_2022-03-21_Julia_Badita.pdf" class="intro__button">Télécharger mon CV</a>
 </section>
 </div>
+
 
 <!-- Intro Mobile Part -->
 
@@ -215,7 +233,8 @@
 
       <article class="timeline__container timeline__item-left">
         <div class="timeline__content">
-          <span>2018</span>
+          <span class="timeline__year">2018</span><br>
+          <div class="timeline__title"><span>Baccalauréat littéraire,</span> Lycée Sainte Claire</div>
           <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
       </article>
@@ -224,7 +243,8 @@
 
       <article class="timeline__container timeline__item-right">
         <div class="timeline__content">
-          <span>2019</span>
+          <span class="timeline__year">2019</span><br>
+          <div class="timeline__title"><span>Baccalauréat littéraire,</span> Lycée Sainte Claire</div>
           <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
       </article>
@@ -233,7 +253,8 @@
 
       <article class="timeline__container timeline__item-left">
         <div class="timeline__content">
-          <span>2020</span>
+          <span class="timeline__year">2020</span><br>
+           <div class="timeline__title"><span>Baccalauréat littéraire,</span> Lycée Sainte Claire</div>
           <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
       </article>
@@ -242,7 +263,8 @@
 
       <article class="timeline__container timeline__item-right">
         <div class="timeline__content">
-          <span>Avril 2021</span>
+          <span class="timeline__year">Avril 2021</span><br>
+           <div class="timeline__title"><span>Baccalauréat littéraire,</span> Lycée Sainte Claire</div>
           <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
       </article>
@@ -251,7 +273,8 @@
 
       <article class="timeline__container timeline__item-left">
         <div class="timeline__content">
-          <span>Décembre 2021</span>
+          <span class="timeline__year">Décembre 2021</span><br>
+           <div class="timeline__title"><span>Baccalauréat littéraire,</span> Lycée Sainte Claire</div>
           <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
       </article>
@@ -260,7 +283,8 @@
 
       <article class="timeline__container timeline__item-right">
         <div class="timeline__content">
-          <span>2022</span>
+          <span class="timeline__year">2022</span><br>
+           <div class="timeline__title"><span>Baccalauréat littéraire,</span> Lycée Sainte Claire</div>
           <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto primis ea eam.</p>
         </div>
       </article>
@@ -280,6 +304,7 @@
     <a href="https://juliabadita.github.io/Gite-tailwind/">
       <img src="./img/Portfolio-gîte.png" alt="Capture d'écran projet Gîte pour mon portfolio">
     </a>
+    <div class="portfolio__title">Projet Gîte La Forlane - Simplon </div>
     </figure>
   
     <!-- Content 2 -->
@@ -288,6 +313,7 @@
     <a href="https://graffa-lille.github.io/Streetart-map/">
       <img src="./img/Portfolio-Streetart.png" alt="Capture d'écran projet Street art map pour mon portfolio">
     </a>
+    <div class="portfolio__title">Projet Street Art Map - Simplon </div>
     </figure>
 
     <!-- Content 3 -->
@@ -296,6 +322,7 @@
     <a href="https://juliabadita.github.io/Baby-pics-2/" >
       <img src="./img/Portfolio-babypics.png" alt="Capture d'écran projet site Baby pics pour mon portfolio">
     </a>
+    <div class="portfolio__title">Projet Baby Pics - Simplon </div>
   </figure>
 
   <!-- Content 4 -->
@@ -358,6 +385,17 @@
   </footer>
   </section>
 
+
+  <!-- Dark mode -->
+
+  <script>
+    const darkMode = document.getElementById('dark-mode');
+
+darkMode.addEventListener('change', () => {
+  document.body.classList.toggle('dark');
+});
+
+  </script>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
