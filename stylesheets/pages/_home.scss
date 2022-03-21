@@ -63,6 +63,20 @@
     }
  }
 
+ .intro__button {
+     margin-left: 4rem;
+     margin-right: 4rem;
+     background-color: $navbar-color;
+     color: $white;
+     padding: 1.2rem 2rem;
+     border: none;
+     border-radius: 0.4rem;
+     cursor: pointer;
+     &:hover {
+          background-color: $nav-links-hover;
+        }
+ }
+
 
  .home__intro-text {
     display: flex;
@@ -148,7 +162,86 @@
     margin-top: 10rem;
 }
 
-/// Skills
+// /// Skills
+
+// .skills__li {
+//     background-position: 100%;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     padding-bottom: 10em;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+  
+//     &__title {
+//       font-size: 3em;
+//     }
+//   }
+  
+//   // article styles 
+//   .skills__ul {
+//     margin: 10rem; 
+//     li {
+//       margin-bottom: 5rem;
+//     }
+//   }
+  
+//   .skills__article {
+//     background-color: $card-color;
+//     box-shadow: 0 0.1rem 2rem black(.24);
+//     display: flex;
+//     flex-flow: column wrap;
+    
+//     > div {
+//       flex: 1;
+//     }
+    
+//     > .skills__article-media {
+//       background-color: transparent;
+//       background-position: 100%;
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       height: 100%;
+//       min-width: 8em;
+//       position: relative;
+      
+//       &:after {
+//         display: block;
+//         content: "";
+//         position: absolute;
+//         top: 0;
+//         left: 0;
+//         height: 100%;
+//         width: 100%;
+//       }
+      
+//       .skills__ul > :nth-child(1) & {
+//         background-image: url(/img/html-5.png);
+//       }
+      
+//       .skills__ul > :nth-child(2) & {
+//         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/190822/tiger-bw-640x480.jpg');
+//       }
+      
+//       .skills__ul > :nth-child(3) & {
+//         background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/190822/rhino-bw-640x480.jpg');
+//       }
+//     }
+    
+  
+//   } 
+  
+//   /// Responsive
+  
+//   @media (min-width: 40em) {
+//     .skills__article {
+//       flex-direction: row;
+      
+//       .skills__article-media {
+//         height: auto;
+//       }
+//     }
+//   }
+
 
 .section__skills {
     @include grid-column-repeat(2, 150px, 2fr, 1rem, 1rem);
@@ -276,13 +369,16 @@
     .portfolio__container {
         @include grid-column-repeat(3, 150px, 2fr, 2rem, 1rem);
         text-align: center;
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 1500px) {
+            grid-template-columns: repeat(2, minmax(200px, 1fr));
+        }
+        @media screen and (max-width: 1000px) {
             grid-template-columns: repeat(1, minmax(200px, 1fr));
             justify-content: center;
           }
         img {
-            width: 70%;
-            @media screen and (max-width: 800px) {
+            width: 80%;
+            @media screen and (max-width: 1000px) {
                 width: 55%;
             }
             &:hover {
@@ -290,6 +386,10 @@
                 border-radius: 1rem;
             }
         }
+    }
+
+    .portfolio__projects {
+  
     }
 
 
