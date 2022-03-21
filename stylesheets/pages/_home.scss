@@ -397,7 +397,6 @@
       }
 
       
-      
       .contact__form {
         border-radius: 0.5rem;
         background-color: $card-color;
@@ -409,6 +408,8 @@
       /// footer
 
       footer {
+        padding: 2rem;
+        background-color: $navbar-color;
         margin-top: 2em;
         bottom:0;
         left:0;
@@ -426,7 +427,7 @@
            color: $white;
            text-decoration: underline;
            &:hover {
-               color: $black;
+               color: $nav-links-hover;
            }
        }
        }

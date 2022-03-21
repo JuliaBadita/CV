@@ -1007,6 +1007,8 @@ input[type=text], input[type=email], textarea {
 }
 
 footer {
+  padding: 2rem;
+  background-color: #583d4c;
   margin-top: 2em;
   bottom: 0;
   left: 0;
@@ -1025,5 +1027,5 @@ footer {
   text-decoration: underline;
 }
 .footer a:hover {
-  color: black;
+  color: #b48383;
 }/*# sourceMappingURL=main.css.map */
