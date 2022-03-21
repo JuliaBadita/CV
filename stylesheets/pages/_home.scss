@@ -201,8 +201,8 @@
     @include grid-column-repeat(2, 150px, 2fr, 1rem, 1rem);
     justify-items: center;
     img {
-        width: 70%;
-        margin-top: 4rem;
+        width: 60%;
+        margin-top: 8rem;
         @media screen and (max-width: 800px) {
             margin-top: 1rem;
         }
@@ -221,6 +221,7 @@
     height: 50%;
     width: 65%;
     margin-top: 10rem;   
+    margin-left: 15rem;
     padding: 2rem 3rem 2rem 3rem;
     @media screen and (max-width: 1200px) {
       margin-top: 3rem;
