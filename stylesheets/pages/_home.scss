@@ -365,18 +365,11 @@
           }
         img {
             width: 80%;
-            @media screen and (max-width: 1000px) {
-                width: 55%;
-            }
             &:hover {
                 border: 0.3rem solid $nav-links-hover;
                 border-radius: 1rem;
             }
         }
-    }
-
-    .portfolio__projects {
-  
     }
 
 
@@ -414,6 +407,9 @@
         bottom:0;
         left:0;
         width:100%;
+        @media screen {
+            
+        }
        }
  
     

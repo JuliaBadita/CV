@@ -362,6 +362,10 @@ html {
 /**
  * Basic styles for links
  */
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 10px;
   overflow-y: auto;
@@ -974,11 +978,6 @@ input[type=submit] a {
 .portfolio__container img {
   width: 80%;
 }
-@media screen and (max-width: 1000px) {
-  .portfolio__container img {
-    width: 55%;
-  }
-}
 .portfolio__container img:hover {
   border: 0.3rem solid #b48383;
   border-radius: 1rem;
@@ -1014,7 +1013,6 @@ footer {
   left: 0;
   width: 100%;
 }
-
 .footer {
   display: flex;
   justify-content: center;
