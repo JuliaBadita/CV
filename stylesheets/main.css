@@ -362,15 +362,6 @@ html {
 /**
  * Basic styles for links
  */
-a {
-  color: #e50050;
-  text-decoration: none;
-}
-a:hover, a:active, a:focus {
-  color: #222222;
-  text-decoration: underline;
-}
-
 html {
   font-size: 10px;
   overflow-y: auto;
@@ -628,6 +619,65 @@ nav a:hover {
 /* ============================================================================
    Buttons
     ============================================================================ */
+.intro__button {
+  background-color: #583d4c;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.intro__button:hover {
+  background-color: #b48383;
+}
+.intro__button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.intro__button-mobile {
+  background-color: #583d4c;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin: 2rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+.intro__button-mobile:hover {
+  background-color: #b48383;
+}
+.intro__button-mobile a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+input[type=submit] {
+  background-color: #583d4c;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: #b48383;
+}
+input[type=submit] a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
 /* ============================================================================
    Carousel 
     ============================================================================ */
@@ -699,20 +749,6 @@ nav a:hover {
   height: 4.5rem;
   width: 4rem;
   color: #343434;
-}
-
-.intro__button {
-  margin-left: 4rem;
-  margin-right: 4rem;
-  background-color: #583d4c;
-  color: white;
-  padding: 1.2rem 2rem;
-  border: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
-}
-.intro__button:hover {
-  background-color: #b48383;
 }
 
 .home__intro-text {
@@ -961,18 +997,6 @@ input[type=text], input[type=email], textarea {
   margin-top: 0.6rem;
   margin-bottom: 1.6rem;
   resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #583d4c;
-  color: white;
-  padding: 1.2rem 2rem;
-  border: none;
-  border-radius: 0.4rem;
-  cursor: pointer;
-}
-input[type=submit]:hover {
-  background-color: #b48383;
 }
 
 .contact__form {

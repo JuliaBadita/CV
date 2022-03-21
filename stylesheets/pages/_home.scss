@@ -63,19 +63,6 @@
     }
  }
 
- .intro__button {
-     margin-left: 4rem;
-     margin-right: 4rem;
-     background-color: $navbar-color;
-     color: $white;
-     padding: 1.2rem 2rem;
-     border: none;
-     border-radius: 0.4rem;
-     cursor: pointer;
-     &:hover {
-          background-color: $nav-links-hover;
-        }
- }
 
 
  .home__intro-text {
@@ -408,20 +395,7 @@
         margin-bottom: 1.6rem;
         resize: vertical;
       }
-      
-      /// Form button
 
-      input[type=submit] {
-        background-color: $navbar-color;
-        color: $white;
-        padding: 1.2rem 2rem;
-        border: none;
-        border-radius: 0.4rem;
-        cursor: pointer;
-        &:hover {
-          background-color: $nav-links-hover;
-        }
-      }
       
       
       .contact__form {
