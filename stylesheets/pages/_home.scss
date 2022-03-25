@@ -87,7 +87,6 @@
 /// Portrait intro
 
 .home__portrait {
-    max-width: 50rem;
     img {
         height: 100%;
         width: 100%;
@@ -143,7 +142,24 @@
     margin: 0 auto;
     margin-top: 5rem;
     .intro__profile-pic {
-        height: 63rem;
+        height: 50rem;
+        object-fit: cover;
+        border-radius: 0.5rem;
+    }
+ }
+}
+
+@media screen and (max-width: 600px) {
+    .intro__card-mobile {
+    @include cards; 
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 5rem;
+    .intro__profile-pic {
+        height: 40rem;
         object-fit: cover;
         border-radius: 0.5rem;
     }

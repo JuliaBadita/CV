@@ -823,9 +823,6 @@ input[type=submit] a {
   }
 }
 
-.home__portrait {
-  max-width: 50rem;
-}
 .home__portrait img {
   height: 100%;
   width: 100%;
@@ -879,7 +876,26 @@ input[type=submit] a {
     margin-top: 5rem;
   }
   .intro__card-mobile .intro__profile-pic {
-    height: 63rem;
+    height: 50rem;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 0.5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro__card-mobile {
+    box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
+    border-radius: 1rem;
+    background-color: #ebd3cf;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 5rem;
+  }
+  .intro__card-mobile .intro__profile-pic {
+    height: 40rem;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 0.5rem;
