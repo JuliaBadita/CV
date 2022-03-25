@@ -1,3 +1,46 @@
  /* ============================================================================
     Footer
      ============================================================================ */
+
+           /// footer
+
+           footer {
+            padding: 2rem;
+            background-color: $navbar-color;
+            margin-top: 2em;
+            bottom:0;
+            left:0;
+            width:100%;
+            @media screen and (max-width: 500px) {
+                font-size: 1.1rem;
+            }
+           }
+     
+        
+           .footer {
+            display: flex;
+            justify-content: center; 
+           align-items: center;
+           flex-direction: row;
+           color: $white;
+           a {
+               color: $white;
+               text-decoration: underline;
+               &:hover {
+                   color: $nav-links-hover;
+               }
+           }
+           img {
+              height: 2.8rem;
+              margin: 0.5rem;
+           }
+           svg {
+              height: 2.8rem;
+              margin: 0.5rem;
+              color: $logo-intro;
+           }
+           }
+
+           .footer__social-medias {
+              margin-left: 0.5rem;
+         }

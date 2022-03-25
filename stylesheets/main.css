@@ -477,6 +477,48 @@ body {
 /* ============================================================================
    Footer
     ============================================================================ */
+footer {
+  padding: 2rem;
+  background-color: #583d4c;
+  margin-top: 2em;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    font-size: 1.1rem;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+.footer a {
+  color: white;
+  text-decoration: underline;
+}
+.footer a:hover {
+  color: #b48383;
+}
+.footer img {
+  height: 2.8rem;
+  margin: 0.5rem;
+}
+.footer svg {
+  height: 2.8rem;
+  margin: 0.5rem;
+  color: #343434;
+}
+
+.footer__social-medias {
+  margin-left: 0.5rem;
+}
+
 /* ============================================================================
     Grid
     ============================================================================ */
@@ -717,6 +759,30 @@ nav a:hover {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+}
+
+.portfolio__button {
+  background-color: #583d4c;
+  color: white;
+  text-align: center;
+  padding: 1.2rem 2rem;
+  border: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.portfolio__button:hover {
+  background-color: #b48383;
+}
+.portfolio__button a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
 input[type=submit] {
@@ -1125,10 +1191,11 @@ input[type=submit] a {
 
 .portfolio__title {
   padding: 1rem;
-  background-color: #583d4c;
-  color: white;
+  background-color: #a7a09f;
+  opacity: 0.8;
+  color: black;
   margin-left: 2.8rem;
-  margin-right: 2.8rem;
+  width: 86%;
 }
 @media screen and (max-width: 1500px) {
   .portfolio__title {
@@ -1147,6 +1214,10 @@ input[type=submit] a {
     margin-left: 2.2rem;
     margin-right: 2.2rem;
   }
+}
+
+.portfolio__projects {
+  width: 86%;
 }
 
 #contact {
@@ -1204,33 +1275,4 @@ lottie-player {
     width: 15rem;
     height: 15rem;
   }
-}
-
-footer {
-  padding: 2rem;
-  background-color: #583d4c;
-  margin-top: 2em;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-@media screen and (max-width: 500px) {
-  footer {
-    font-size: 1.1rem;
-  }
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  color: white;
-}
-.footer a {
-  color: white;
-  text-decoration: underline;
-}
-.footer a:hover {
-  color: #b48383;
 }/*# sourceMappingURL=main.css.map */

@@ -384,10 +384,11 @@
 
 .portfolio__title {
     padding: 1rem;
-    background-color: $navbar-color;
-    color: $white;
+    background-color: $gray;
+    opacity: 0.8;
+    color: $black;
     margin-left: 2.8rem;
-    margin-right: 2.8rem;
+    width: 86%;
     @media screen and (max-width: 1500px) {
     margin-left: 4rem;
     margin-right: 4rem;
@@ -401,6 +402,10 @@
       margin-right: 2.2rem;
       }
 }
+
+.portfolio__projects {
+    width: 86%;
+  }
 
 
     /// Contact form
@@ -452,34 +457,4 @@
           height: 15rem;          
         }
       }
-
-      /// footer
-
-      footer {
-        padding: 2rem;
-        background-color: $navbar-color;
-        margin-top: 2em;
-        bottom:0;
-        left:0;
-        width:100%;
-        @media screen and (max-width: 500px) {
-            font-size: 1.1rem;
-        }
-       }
- 
-    
-       .footer {
-        display: flex;
-        justify-content: center; 
-       align-items: center;
-       flex-direction: row;
-       color: $white;
-       a {
-           color: $white;
-           text-decoration: underline;
-           &:hover {
-               color: $nav-links-hover;
-           }
-       }
-       }
     

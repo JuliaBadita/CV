@@ -69,6 +69,16 @@
      }     
   }
 
+  /// Portfolio Button
+  .portfolio__button {
+    @include buttons;
+    margin: 0.5rem;
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 
     /// Form button
 
