@@ -1033,13 +1033,14 @@ input[type=submit] a {
 }
 
 .timeline__title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-style: italic;
   font-weight: 500;
 }
 .timeline__title span {
   color: #583d4c;
   font-weight: 600;
+  font-size: 1.45rem;
 }
 
 .timeline__item-left {
