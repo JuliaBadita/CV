@@ -375,7 +375,7 @@ html {
 
 /* Background */
 body {
-  background-image: url(/img/background.jpg);
+  background-image: url(/img/background/background.jpg);
   background-attachment: fixed;
   scroll-behavior: smooth;
   background-color: #ebe6dd;
@@ -408,7 +408,7 @@ h1, h2, h3, h4 {
  * Basic typography style for copy text
  */
 body {
-  color: #222222;
+  color: rgb(34, 34, 34);
   font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -934,7 +934,7 @@ input[type=submit] a {
     box-shadow: 0 0.4rem 0.8rem 0 #0f0f0f;
     border-radius: 1rem;
     background-color: #ebd3cf;
-    width: 65%;
+    width: 50%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -942,7 +942,7 @@ input[type=submit] a {
     margin-top: 5rem;
   }
   .intro__card-mobile .intro__profile-pic {
-    height: 50rem;
+    height: 40rem;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 0.5rem;
@@ -1016,7 +1016,7 @@ input[type=submit] a {
   justify-items: center;
 }
 .section__skills img {
-  width: 60%;
+  width: 50%;
   margin-top: 8rem;
 }
 @media screen and (max-width: 800px) {

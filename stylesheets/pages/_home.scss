@@ -135,14 +135,14 @@
   @media screen and (max-width: 900px) {
     .intro__card-mobile {
     @include cards; 
-    width: 65%;
+    width: 50%;
     text-align: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     margin-top: 5rem;
     .intro__profile-pic {
-        height: 50rem;
+        height: 40rem;
         object-fit: cover;
         border-radius: 0.5rem;
     }
@@ -217,7 +217,7 @@
     @include grid-column-repeat(2, 150px, 2fr, 1rem, 1rem);
     justify-items: center;
     img {
-        width: 60%;
+        width: 50%;
         margin-top: 8rem;
         @media screen and (max-width: 800px) {
             margin-top: 1rem;
