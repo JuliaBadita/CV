@@ -631,7 +631,7 @@ nav a:hover {
   display: block;
   position: fixed;
   top: 0;
-  left: -100%;
+  left: -150%;
   width: 30rem;
   height: 100%;
   margin: 0;
